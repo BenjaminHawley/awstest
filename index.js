@@ -1,7 +1,10 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/', (req, res, next) => {
+  console.log('accessed the right page');
+  next();
+}, (req, res) => {
   res.sendFile(__dirname + '/index.html');
 })
 
