@@ -9,4 +9,4 @@ app.get('/', (req, res) => {
 //   res.sendFile()
 // })
 
-app.listen(2000, () => console.log('app is listening on port 3000'));
+app.listen(2000, () => console.log('app is listening on port 2000'));
